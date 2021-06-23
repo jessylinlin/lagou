@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+
+</body>
+<script>
+  //闭包
+  function makePower(power) {
+    return function (number) {
+      return Math.pow(number, power)
+    }
+  }
+  let power2 = makePower(2)
+  let power3 = makePower(3)
+  //console.log(power2(4))
+
+
+
+  function makeSalary(base) {
+    return function (performance) {
+      return base + performance
+    }
+  }
+
+  let salaryLeve1 = makeSalary(12000)
+  let salaryLeve2 = makeSalary(15000)
+
+  console.log(salaryLeve1(2000))
+  console.log(salaryLeve1(3000))
+</script>
+
+</html>
