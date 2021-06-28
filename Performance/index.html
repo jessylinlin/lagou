@@ -1,72 +1,75 @@
 <html>
+
 <head>
-<title>任务管理器监控</title>
+    <title>任务管理器监控</title>
 </head>
+
 <body>
-<button id='btn'>ADD</button>
-<script>
-    // const arr = []
-    // function test () {
-    //     for (let i = 0; i < 100000; i++) {
-    //         document.body.append('<p>i</p>')
-    //     }
-    //     arr.push(new Array(10000000).join('x'))
-    // }
-   
-    // const btn = document.getElementById('btn')
-    // btn.addEventListener('click', function (e) {
-    //     test ()
-    // })
-    // var tmpEle;
+    <button id='btn'>ADD</button>
+    <script>
+        // const arr = []
+        // function test () {
+        //     for (let i = 0; i < 100000; i++) {
+        //         document.body.append('<p>i</p>')
+        //     }
+        //     arr.push(new Array(10000000).join('x'))
+        // }
 
-    // function test () {
-    //     var ul = document.createElement("ul")
+        // const btn = document.getElementById('btn')
+        // btn.addEventListener('click', function (e) {
+        //     test ()
+        // })
+        // var tmpEle;
 
-    //     for (let i = 0; i < 10; i++) {
-    //         var li = document.createElement('li')
-    //         ul.append(li)
-    //     }
-         
-    //     tmpEle = ul
-    //     // tmpEle = null
-    // }
-    // const btn = document.getElementById('btn')
-    // btn.addEventListener('click', function (e) {
-    //     test ()
-    // })
+        // function test () {
+        //     var ul = document.createElement("ul")
 
-    // funtion foo() {
-    //     //dom下
-    //     var btn = document.getElementById('btn')
-    //     //独立作用域（dom）
-    //     btn.addEventListener('click', function (e) {
-    //        console.log(btn.id)
-    //     })
-    // }
-    // function foo() {
-    //     //dom下
-    //     var btn = document.getElementById('btn')
-    //     //独立作用域（dom）
-    //     btn.addEventListener('click', function (e) {
-    //        console.log((btn || {}).id)
-    //     })
-    //     btn = null
-    // }
-    // foo()
-    for (var i = 0; i < 10; i++) {
-        var p = document.createElement("p")
-        p.innerHTML = i
-        document.body.appendChild(p)
-    }
+        //     for (let i = 0; i < 10; i++) {
+        //         var li = document.createElement('li')
+        //         ul.append(li)
+        //     }
 
-    //文档碎片
-    const fragEle = document.createDocumentFragment()
-    for (var i = 0; i < 10; i++) {
-        var p = document.createElement("p")
-        p.innerHTML = i
-        fragEle.appendChild(p)
-    }
-    document.body.appendChild(fragEle)
-</script>
+        //     tmpEle = ul
+        //     // tmpEle = null
+        // }
+        // const btn = document.getElementById('btn')
+        // btn.addEventListener('click', function (e) {
+        //     test ()
+        // })
+
+        // funtion foo() {
+        //     //dom下
+        //     var btn = document.getElementById('btn')
+        //     //独立作用域（dom）
+        //     btn.addEventListener('click', function (e) {
+        //        console.log(btn.id)
+        //     })
+        // }
+        // function foo() {
+        //     //dom下
+        //     var btn = document.getElementById('btn')
+        //     //独立作用域（dom）
+        //     btn.addEventListener('click', function (e) {
+        //        console.log((btn || {}).id)
+        //     })
+        //     btn = null
+        // }
+        // foo()
+        for (var i = 0; i < 10; i++) {
+            var p = document.createElement("p")
+            p.innerHTML = i
+            document.body.appendChild(p)
+        }
+
+        //文档碎片
+        const fragEle = document.createDocumentFragment()
+        for (var i = 0; i < 10; i++) {
+            var p = document.createElement("p")
+            p.innerHTML = i
+            fragEle.appendChild(p)
+        }
+        document.body.appendChild(fragEle)
+    </script>
 </body>
+
 </html>
